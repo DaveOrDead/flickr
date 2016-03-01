@@ -1,0 +1,67 @@
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+p {
+    max-width: 700px;
+}
+
+/* Basic flex grid */
+.l-grid {
+    align-items: top;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: -12px;
+}
+
+.l-grid__item {
+    padding-left: 12px;
+    flex: 1 1 25%;
+}
+
+/* Reset button styles */
+.c-panel {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.c-image {
+    display: block;
+}
+
+/* Selected state */
+.selected {
+    border: 3px solid #D24D57;
+    position: relative;
+}
+
+/* Heart */
+.selected::before,
+.selected::after {
+    background: #D24D57;
+    border-radius: 12px 12px 0 0;
+    content: "";
+    height: 20px;
+    left: 17px;
+    position: absolute;
+    top: 5px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    width: 12px;
+}
+
+.selected:after {
+    left: 5px;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+}

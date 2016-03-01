@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Sainsbury's Flickr Challenge</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <h1>Sainsbury's Flickr challenge</h1>
+
+    <p>In order for the memory of selected/favourited photos to be retained on page refresh this site needs to be running on a local server. <a href="https://www.mamp.info/en/">MAMP</a> or <a href="http://www.wampserver.com/en/">WAMP</a> are ideal for doing so locally.</p>
+
+    <p>Or I set it up on a server if you'd rather not have the hassle ;) of installing something locally: <a href="http://davidberner.co.uk/flickr/app">http://davidberner.co.uk/flickr/app</a>
+
+    <p>You can tab through the photos and hit the enter key as well as clicking to favourite them.</p>
+
+    <p>Tested in Firefox 39, Chrome 48, Safari 9, IE 10, 11 (functionally but not layout), Edge </p>
+
+    <div id="gallery"></div>
+
+    <script src="assets/js/Flickr.js"></script>
+
+    <script>
+        flickrApp.callFlickr("london");
+    </script>
+
+</body>
+
+</html>
